@@ -8,6 +8,11 @@ private:
     double er;
 
 public:
+    Fazzynumber();
+    Fazzynumber(double x_val, double el_val, double er_val);
+    Fazzynumber(const Fazzynumber& other);
+    ~Fazzynumber();
+
     void Init(double x_val, double el_val, double er_val);
     void Read();
     void Display() const;
